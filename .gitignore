@@ -1,4 +1,14 @@
+**/.vs/
+**/packages/
+
 .vscode
-build
+
 tags
 .editorconfig
+
+# build files
+build/Win32 
+build/pid.dir
+build/CMakeFiles
+build/Debug  
+

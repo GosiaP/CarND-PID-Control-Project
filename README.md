@@ -1,7 +1,26 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+[//]: # (Image References)
+
+[image1]: ./rsc/PID.png "PID"
+
 ---
+## P, I, D component
+Definitions:
+CTE - Cross Track Error. It is lateral distance between vehicle and the referencet trajectory.
+
+* The P-component (stands for proportional) term defines  a proportional correction of the error. The larger the term the stronger the correction of the error will be. It causes the vehicle to overshoot, resulting in a wave along the reference path. You cane see on the figure below - blue line representing P controller.
+* The D-component (stands for differential) term decreases the tendency of the P-controller to oscillate around the target value. See green line on the figure below representing PD controller.
+* The I-component (stands for integral) term The I, or "integral", component counteracts a bias in the CTE which prevents the P-D controller from reaching the center line. See green dashed line for PID controller.
+
+## Determine P,I,D parameters
+I choosed th evalues by trial and error. At begining I decided to use following values for P,I,D parameters: (1.0, 0.0, 1.0)
+and mofified them to achive a car trajectory which was stable enough.
+After many eperiment I decided to setup following parameters : (0.23, 0.00005, 7.9) for P,I,D respectively.
+
+
+![alt text][image1]
 
 ## Dependencies
 

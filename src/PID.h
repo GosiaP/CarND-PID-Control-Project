@@ -41,6 +41,8 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+private:
+  bool is_first_update;
 };
 
 #endif /* PID_H */
